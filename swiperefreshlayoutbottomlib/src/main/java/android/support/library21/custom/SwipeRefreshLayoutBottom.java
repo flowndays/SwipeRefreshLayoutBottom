@@ -348,7 +348,7 @@ public class SwipeRefreshLayoutBottom extends ViewGroup {
             } else {
                 endTarget = (int) mSpinnerFinalOffset;
             }
-            setTargetOffsetTopAndBottom(endTarget - mCurrentTargetOffsetTop,
+            setTargetOffsetTopAndBottom(mCurrentTargetOffsetTop - endTarget,
                     true /* requires update */);
             mNotify = false;
             startScaleUpAnimation(mRefreshListener);
